@@ -39,7 +39,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<hoe>, ["~> 3.8"])
     else
       s.add_dependency(%q<ffi>, [">= 1.0.7", "~> 1"])
-      s.add_runtime_dependency(%q<ffi>, ["~> 1"])
       s.add_dependency(%q<blankslate>, [">= 2.1.2.3"])
       s.add_dependency(%q<rubyforge>, [">= 2.0.4"])
       s.add_dependency(%q<rdoc>, ["~> 4.0"])
@@ -55,7 +54,6 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<ffi>, [">= 1.0.7", "~> 1"])
-      s.add_runtime_dependency(%q<ffi>, ["~> 1"])
     s.add_dependency(%q<blankslate>, [">= 2.1.2.3"])
     s.add_dependency(%q<rubyforge>, [">= 2.0.4"])
     s.add_dependency(%q<rdoc>, ["~> 4.0"])
