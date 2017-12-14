@@ -84,7 +84,7 @@ class RubyPython::Interpreter
     @libbase = "#{::FFI::Platform::LIBPREFIX}#{@version_name}"
     @libext = ::FFI::Platform::LIBSUFFIX
     @libname = "#{@libbase}.#{@libext}"
-    @libname_d = "#{@libbase}.#{@libext}_d"
+    @libname_d = "#{@libbase}_d.#{@libext}"
 
     # We may need to look in multiple locations for Python, so let's
     # build this as an array.
