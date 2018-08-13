@@ -64,10 +64,10 @@ module RubyPython
           if interp.valid?
             self.const_set(:Runtime, interp)
           else
-            raise RubyPython::InvalidInterpreter, "An invalid interpreter was specified."
+            raise RubyPython::InvalidInterpreter, "Interpreter is invalid."
           end
         end
-        
+
         unless defined? RubyPython::Python.ffi_libraries
           Runtime.__send__(:infect!, RubyPython::Python)
         end
